@@ -1,0 +1,105 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 64px);
+  position: relative;
+  overflow: hidden;
+}
+
+.info {
+  position: absolute;
+  top: -200px;
+  width: 30px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 500;
+  color: white;
+  box-shadow: inset 0 0 10px 1px white;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info.activeError {
+  width: 250px;
+  top: 20px;
+  background-color: rgb(250, 167, 167);
+}
+.info.activeSuccess {
+  top: 20px;
+  width: 250px;
+  background-color: rgb(177, 255, 198);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  background-color: rgb(236, 251, 255);
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px -10px gray;
+}
+.inputBox {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  justify-content: space-between;
+}
+form div.inputBox.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+form input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+}
+form div.inputBox.checkbox label {
+  font-size: 17px;
+  border-radius: 0;
+}
+input {
+  background-color: transparent;
+  height: 65%;
+  width: 70%;
+  padding: 5px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+label {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border-color: transparent;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+button:hover {
+  font-size: 20px;
+  /* letter-spacing: 1px; */
+  border-color: gray;
+  background-color: transparent;
+}
